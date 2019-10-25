@@ -14,10 +14,12 @@ class RootAPI < Grape::API
     end
     get :hello do
       {
-        message: "hii === #{params[:name]} === #{params[:time]}"
+        message: "hiiiiiii === #{params[:name]} === #{params[:time]}"
       }
     end
 
   end
-  add_swagger_documentation
+  add_swagger_documentation(
+    schemes: ['http']
+  )
 end
