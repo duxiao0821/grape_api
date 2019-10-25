@@ -14,7 +14,7 @@ class RootAPI < Grape::API
     end
     get :hello do
       {
-        message: "hiiiiiii === #{params[:name]} === #{params[:time]}"
+        message: "hi === #{params[:name]} === #{params[:time]}"
       }
     end
 
