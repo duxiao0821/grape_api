@@ -1,10 +1,4 @@
-require 'grape'
-require 'grape-swagger'
-class RootAPI < Grape::API
-  version 'v2', using: :path, vendor: 'cadae'
-  format :json
-  prefix :api
-
+class Exchange::Home::Welcome < Grape::API
   resource :welcome do
     desc 'lalala' do
     end
@@ -19,7 +13,4 @@ class RootAPI < Grape::API
     end
 
   end
-  add_swagger_documentation(
-    schemes: ['http']
-  )
 end
